@@ -47,6 +47,6 @@ app.post("/collection/:collectionName", (request, response, next) => {
        //console.log(request.body);
     });
 })
-app.listen(3000, function(){
+app.listen(process.env.PORT, function(){
     console.log("app running");
 })
