@@ -5,7 +5,7 @@ const mongodb = require("mongodb").MongoClient;
 let database;
 
 app.use(express.json());
-
+app.use(express.static('public'))
 const cors = require("cors");
 mongodb.connect("mongodb+srv://Root:Root@cluster0.sd8cz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
 function(error, client){
